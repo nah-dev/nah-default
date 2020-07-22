@@ -1,0 +1,16 @@
+{
+  "name": "nah.default",
+  "version": "1.0.0",
+  "description": "Build setup for default nah theme",
+  "main": "index.js",
+  "scripts": {
+    "watch": "gulp watch"
+  },
+  "repository": "git://github.com/nahgit/nah.default",
+  "author": "Mark Whitcher",
+  "license": "MIT",
+  "private": null,
+  "defDependencies": {
+    "anidea.gulp": "nahgit/anidea.gulp#0.5.2"
+  }
+}
