@@ -1,43 +1,48 @@
+// This variable will need to change to wherever you design theme's
+// images are stored. You should be able just change the number to
+// the number for your design theme.
+$image-location: '../design_images/340';
+
 $color-text-base: black;
 
-$orange: #f80;
+$orange:      #f80;
 $orange-dark: #c50;
-$green: #03b300;
-$green-dark: #028200;
-$blue: #0096ff;
-$blue-dark: #0054c2;
-$purple: #cc00ff;
+$green:       #03b300;
+$green-dark:  #028200;
+$blue:        #0096ff;
+$blue-dark:   #0054c2;
+$purple:      #cc00ff;
 $purple-dark: #8d00b0;
-$red: #ff2400;
-$red-dark: #b71a00;
+$red:         #ff2400;
+$red-dark:    #b71a00;
 
-$background-html-base: #666;
-$background-html: rgba(0, 0, 0, 0);
-$background-html-top: rgba(0, 0, 0, 0.65);
-$background-header: $orange;
+$background-html-base:  #666;
+$background-html:       rgba(0, 0, 0, 0);
+$background-html-top:   rgba(0, 0, 0, 0.65);
+$background-header:     $orange;
 $background-header-top: $orange-dark;
 
 $background-content: #fff;
 $background-sidebar: #ccc;
 
-$background-footer: $background-header;
+$background-footer:     $background-header;
 $background-footer-top: $background-header-top;
 
-$background-menu-item: $background-html-top;
-$background-menu-item-right: $background-html;
-$background-menu-highlight:  $background-header-top;
+$background-menu-item:            $background-html-top;
+$background-menu-item-right:      $background-html;
+$background-menu-highlight:       $background-header-top;
 $background-menu-highlight-right: $background-header;
-$color-menu: #fff;
-$color-menu-highlight: #fff;
+$color-menu:                      #fff;
+$color-menu-highlight:            #fff;
 
-$color-header-title: #fff;
+$color-header-title:   #fff;
 $color-header-tagline: #000;
 
 $color-heading: $background-header-top;
-$color-link: $color-heading;
-$color-footer: $color-header-tagline;
+$color-link:    $color-heading;
+$color-footer:  $color-header-tagline;
 
-$color-button: $background-header;
+$color-button:        $background-header;
 $color-button-bottom: $background-header-top;
 
 $color-border: #bbb;
@@ -51,13 +56,11 @@ $color-cal5: darken(#f2af58, 20);
 $font-main: "Source Sans Pro", Helvetica, sans-serif;
 $font-heading: $font-main;
 
-$image-location: '../design_images/340';
-
 
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic);
 
-/* Layout - reset *******************************/
 
+// Reset the layout
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
