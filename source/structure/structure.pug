@@ -1,0 +1,33 @@
+#container.lyt
+  #container2.lyt
+    #container3.lyt
+      #header.lyt
+        #title.lyt
+          h1.lyt
+            a(href='/')
+              nah:site-element(type='title')
+          #tagline.lyt
+            nah:site-element(type='tagline')
+        #header-zone.lyt
+          nah:site-element(content='Text' title='Header' type='zone')
+      #main.lyt
+        #main-menu.lyt
+          nah:site-element(content='Main menu,Menus' title='Main menu' type='zone')
+        #content.lyt
+          #content-top.lyt
+            nah:site-element(content='Text,Menus' title='Content top' type='zone')
+          #content-main.lyt
+            nah:site-element(type='content')
+        #sidebar.lyt
+          .lyt.col
+            .lyt.zone
+              nah:site-element(content='Text,Menus,Dynamic' heading='true' title='Sidebar 1' type='zone')
+            .lyt.zone
+              nah:site-element(content='Text,Menus,Dynamic' heading='true' title='Sidebar 2' type='zone')
+          .lyt.col
+            .lyt.zone
+              nah:site-element(content='Text,Menus,Dynamic' heading='true' title='Sidebar 3' type='zone')
+            .lyt.zone
+              nah:site-element(content='Text,Menus,Dynamic' heading='true' title='Sidebar 4' type='zone')
+      #footer.lyt
+        nah:site-element(content='Text' title='Footer' type='zone')
