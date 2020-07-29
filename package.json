@@ -6,11 +6,11 @@
   "scripts": {
     "watch": "gulp watch"
   },
-  "repository": "git://github.com/nahgit/nah.default",
+  "repository": "git://github.com/nah-dev/nah-default",
   "author": "Mark Whitcher",
   "license": "MIT",
   "private": null,
   "defDependencies": {
-    "anidea.gulp": "nahgit/anidea.gulp#0.5.2"
+    "anidea-gulp": "nah-dev/anidea-gulp#0.5.2"
   }
 }

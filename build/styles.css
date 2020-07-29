@@ -1,5 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic);
-/* Layout - reset *******************************/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,12 +52,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 html {
   background-color: #666;
-  background-image: url("../design_images/340/asphalt.jpg");
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(0, 0, 0, 0))), url("../design_images/340/asphalt.jpg");
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url("../design_images/340/asphalt.jpg");
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url("../design_images/340/asphalt.jpg");
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url("../design_images/340/asphalt.jpg");
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url("../design_images/340/asphalt.jpg");
+  background-image: url("/stylesheets/design_images/340/asphalt.jpg");
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(0, 0, 0, 0))), url("/stylesheets/design_images/340/asphalt.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url("/stylesheets/design_images/340/asphalt.jpg");
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url("/stylesheets/design_images/340/asphalt.jpg");
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url("/stylesheets/design_images/340/asphalt.jpg");
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url("/stylesheets/design_images/340/asphalt.jpg");
   background-attachment: fixed; }
 
 html strong {
