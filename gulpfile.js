@@ -1,1 +1,1 @@
-module.exports = require("anidea.gulp");
+module.exports = require("anidea-gulp");
