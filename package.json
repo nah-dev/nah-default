@@ -10,7 +10,7 @@
   "author": "Mark Whitcher",
   "license": "MIT",
   "private": null,
-  "defDependencies": {
+  "devDependencies": {
     "anidea-gulp": "nah-dev/anidea-gulp#0.5.2"
   }
 }

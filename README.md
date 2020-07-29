@@ -3,7 +3,7 @@ Default design theme for Net-at-hand
 
 Version
 ------------------------------------
-The current version is 1.0.
+The current version is 1.5.
 
 
 Included files
@@ -103,6 +103,7 @@ Changes made to this design theme
 
 * 1.0 - initial release
 * 1.5 - set up project to use gulp 
+* 1.5.1 - bug fixes
 
 
 License
