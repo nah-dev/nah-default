@@ -1,7 +1,23 @@
 //- This layout file is only for use in building sample pages
 //- so we can test what pages will look like when we make changes
 //- to the design theme.
-- env = 'development'
+- 
+  env           = 'development'
+  sampleTitle   = "This is a website"
+  sampleTagline = "Sample site tagline."
+  sampleFooter  = "This is a sample footer."
+  
+  // These pages are used for rendering the _sampleMenu partial,
+  // The key should match the url
+  pages         = {
+    "sample":  "Page title",
+    "sample1": "Sample page 1",
+    "sample2": "Sample page 2",
+    "sample3": "Sample page 3",
+    "sample4": "Sample page 4",
+    "sample5": "Sample page 5",
+  }
+  
 include _base
 
 doctype 
