@@ -1,0 +1,11 @@
+//- This is just a quick bit of code to generate a menu that mimics
+//- the default nah style of menu. You can change these titles as
+//- needed for your own sanity if you are creating specific sample
+//- pages, but this will not affect the design theme at all since
+//- changing it won't match the menus that nah generates.
+ul.menu
+  each title, key in pages
+    if (currentPage && key == currentPage) || (!currentPage && key == "sample")
+      li(id=sample).current: span: span= title
+    else
+      li(id=sample): a(href=`/samples/${key}.html`): span= title
