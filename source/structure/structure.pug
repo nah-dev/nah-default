@@ -4,10 +4,11 @@
       #header.lyt
         #title.lyt
           h1.lyt
-            a(href='/')
-              nah:site-element(type='title')
+            //- a(href='/')
+            //-   +element(tag="nah:site-element" type='title')
+            //-     | Sample Website
           #tagline.lyt
-            nah:site-element(type='tagline')
+            +element('nah:site-element')
         #header-zone.lyt
           nah:site-element(content='Text' title='Header' type='zone')
       #main.lyt
