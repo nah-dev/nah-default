@@ -1,6 +1,6 @@
 {
   "name": "nah.default",
-  "version": "1.0.0",
+  "version": "1.6.0",
   "description": "Build setup for default nah theme",
   "main": "index.js",
   "scripts": {
