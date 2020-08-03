@@ -6,16 +6,6 @@
 
 
 - env = env ? env : 'production'
-- 
-  // this sets some variables for this particular site so we can do 
-  // different builds for different settings.
-  switch ( env ) {
-    case "development":
-      imageLocation = "/stylesheets/design_images/340" ;
-      break;
-    default:
-      imageLocation = "../design_images/340";
-  }
 
 mixin for(target)
   if typeof(target) == "string" && (env.toLowerCase() == target.toLowerCase()) && block
@@ -23,28 +13,14 @@ mixin for(target)
   else if target.includes(env.toLowerCase()) && block
     block
 
-mixin element(tag=null, content=null)
-  | hello, world
-  
-  //- - if (env != 'development')
-  //-   //- For production environment (for use on nah), we need to leave
-  //-   //- the tags intact so they can be used by the system.
-  //-   - if (tag == 'nah:plugin')
-  //-     - if (content)
-  //-       nah:plugin&attributes(attributes)= content
-  //-     - else
-  //-       nah:plugin&attributes(attributes)/
-  //-   - else if (tag == 'nah:widget')
-  //-     - if (content)
-  //-       nah:widget&attributes(attributes)= content
-  //-     - else
-  //-       nah:widget&attributes(attributes)/
-  //-   - else
-  //-     - if (content)
-  //-       nah:site-element&attributes(attributes)= content
-  //-     - else
-  //-       nah:site-element&attributes(attributes)/
-  //- - else if (block)
-  //-   //- For the sample pages, however, we will plug in whatever sample
-  //-   //- content we include in the block code.
-  //-   block
+mixin element(content)
+  if env != 'development'
+    nah:site-element&attributes(attributes)= content
+  else if block
+    block
+
+mixin widget(content)
+  if env != 'development'
+    nah:widget&attributes(attributes)= content
+  else if block
+    block

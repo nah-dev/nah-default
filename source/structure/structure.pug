@@ -1,3 +1,7 @@
+include ../samples/_base
+
+//- This structure page uses a pug mixin to generate <nah:site-element> nodes
+//- but also let you put sample content in them for sample pages.
 #container.lyt
   #container2.lyt
     #container3.lyt
@@ -5,29 +9,44 @@
         #title.lyt
           h1.lyt
             a(hpref='/')
-              nah:site-element(content="Text" type='title')
+              +element()(content="Text" type="tagline")
+                = sampleTitle || "Sample site title"
           #tagline.lyt
-            nah:site-element(content="Text" type="tagline")
+            +element()(content="Text" type="tagline")
+              = sampleTagline || "Sample site tagline goes here."
         #header-zone.lyt
-          nah:site-element(content='Text' title='Header' type='zone')
+          +element()(content='Text' title='Header' type='zone')
+            block header
       #main.lyt
         #main-menu.lyt
-          nah:site-element(content='Main menu,Menus' title='Main menu' type='zone')
+          +element(content='Main menu,Menus' title='Main menu' type='zone')
+            block mainMenu
+              include ../samples/_sampleMenu
         #content.lyt
           #content-top.lyt
-            nah:site-element(content='Text,Menus' title='Content top' type='zone')
+            +element()(content='Text,Menus' title='Content top' type='zone')
+              block contentTop
           #content-main.lyt
-            nah:site-element(type='content')
+            +element()(type='content')
+              block content
+                | Site content will go here.
         #sidebar.lyt
           .lyt.col
             .lyt.zone
-              nah:site-element(content='Text,Menus,Dynamic' heading='true' title='Sidebar 1' type='zone')
+              +element()(content='Text,Menus,Dynamic' heading='true' title='Sidebar 1' type='zone')
+                block sidebar1
             .lyt.zone
-              nah:site-element(content='Text,Menus,Dynamic' heading='true' title='Sidebar 2' type='zone')
+              +element()(content='Text,Menus,Dynamic' heading='true' title='Sidebar 2' type='zone')
+                block sidebar2
           .lyt.col
             .lyt.zone
-              nah:site-element(content='Text,Menus,Dynamic' heading='true' title='Sidebar 3' type='zone')
+              +element()(content='Text,Menus,Dynamic' heading='true' title='Sidebar 3' type='zone')
+                block sidebar3
             .lyt.zone
-              nah:site-element(content='Text,Menus,Dynamic' heading='true' title='Sidebar 4' type='zone')
+              +element()(content='Text,Menus,Dynamic' heading='true' title='Sidebar 4' type='zone')
+                block sidebar4
       #footer.lyt
-        nah:site-element(content='Text' title='Footer' type='zone')
+        +element()(content='Text' title='Footer' type='zone')
+          p
+            block footer
+              = sampleFooter || "Sample footer goes here."
