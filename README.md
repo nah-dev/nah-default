@@ -13,8 +13,13 @@ are:
 * build/structure/structure.html - content for the page structure section of the design
   theme
 * build/styles.css - css file for the 
-* build/stylesheets/design_images/340/asphalt.jpg - image used for html within the CSS file
+* build/images/asphalt.jpg - image used for html backgroun d within the CSS file
+* build/images/header-*.jpg - sample header images
 
+The files in the source folder are the .scss and .pug files used to generate
+the .html and .css files in the build folder. When properly set up, you can modify 
+the files in the source folder and live preview the changes on some sample pages
+in your web browser. Below is an explanation of how to do that.
 
 
 How to use this repository
@@ -110,12 +115,13 @@ Change log
 ------------------------------------
 Changes made to this design theme
 
-* 1.7 - Added sample header images
-* 1.6 - Set up better sample pages
+* 1.7.1 - fix the readme file
+* 1.7   - Added sample header images
+* 1.6   - Set up better sample pages
 * 1.5.2 - bug fix
 * 1.5.1 - bug fixes
-* 1.5 - set up project to use gulp 
-* 1.0 - initial release
+* 1.5   - set up project to use gulp 
+* 1.0   - initial release
 
 
 License
