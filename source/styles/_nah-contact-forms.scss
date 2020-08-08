@@ -1,0 +1,76 @@
+/* Contact forms ***********************/
+input[type='submit'],
+a.button {
+  -webkit-appearence: none;
+  padding: .75em 1em;
+  border: 0;
+  color: white;
+  background-color: $color-button;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  background-image: linear-gradient($color-button, $color-button-bottom);
+  border-top: 1px solid $color-button-bottom;
+  border-bottom: 1px solid $color-button; }
+  input[type='submit']:hover,
+  a.button:hover {
+    background: black;
+    color: #fff;
+    border-color: black;
+    cursor: pointer; }
+
+input[type='text'],
+textarea,
+input[type='password'] {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: .5em;
+  /*fix for ie7*/
+  *width: 96%;
+  *padding: 2%; }
+
+.contactform {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 1em 1em;
+  background-color: $background-sidebar;
+  float: left;
+  width: 100%;
+  /*fix for ie7*/
+  *width: 96%;
+  *padding: 0 2% 1em 2%; }
+  .contactform label {
+    display: block;
+    color: $color-heading;
+    font-size: 90%;
+    font-weight: bold; }
+  .contactform .message {
+    background: none;
+    padding-top: 0; }
+  .contactform div {
+    padding: 1em 0; }
+  .contactform input[type='submit'] {
+    float: right;
+    color: white; }
+    .contactform input[type='submit']:hover {
+      background-color: #000;
+      color: white; }
+  .contactform textarea {
+    height: 10em; }
+
+.contactform.submission {
+  background-color: #cc5500;
+  border: none;
+  padding: 10px;
+  color: white;
+  text-align: center; }
+
+.submission {
+  margin-bottom: 1.5em; }

@@ -1,10 +1,6 @@
 Default design theme for Net-at-hand
 ====================================
 
-Version
-------------------------------------
-The current version is 1.5.2
-
 
 Included files
 ------------------------------------
@@ -68,10 +64,11 @@ you'll see the changes within the sample files very quickly.
 
 One of the first variables in style.scss is the directory location for your
 design theme's image file.  You'll want to change this to whatever the
-directory is within your Net-at-hand design theme.  You'll also want to 
-change the directory (it's a number) that is set up within the build folder
-to match whatever is in your styles.scss file (this is only so you can use
-images within the sample pages)
+directory is within your Net-at-hand design theme.  For the sample pages, the
+images should be in the ./build/images folder. The .scss variable $image-location
+is set to this folder for the sample pages. It get's overriden by whatever you
+set it to is ./source/styles.scss for the main stylesheet that you copy and 
+paste into your Net-at-hand design theme.
 
 **Step 6--mess up and revert**
 The great thing about having this in a version control system is that you can revert
@@ -94,6 +91,18 @@ committed any changes), just type
     git reset --hard
 
 
+Sample header images
+------------------------------------
+A sample header image and the styles for using it in the header are included
+for your reference.  To use it, just uncomment the line in ./source/styles.scss
+that imports the _header-images.scss file:
+
+    @import "styles/_header-images.scss
+
+With this file included, the header is modified to include three header images
+at three different screen sizes. By default it is anchored to the bottom left of
+the header, but you can change this and also change the scaling behavior to
+achieve whatever layout you want with the image.
 
 
 
@@ -101,10 +110,12 @@ Change log
 ------------------------------------
 Changes made to this design theme
 
-* 1.0 - initial release
-* 1.5 - set up project to use gulp 
-* 1.5.1 - bug fixes
+* 1.7 - Added sample header images
+* 1.6 - Set up better sample pages
 * 1.5.2 - bug fix
+* 1.5.1 - bug fixes
+* 1.5 - set up project to use gulp 
+* 1.0 - initial release
 
 
 License

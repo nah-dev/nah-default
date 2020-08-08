@@ -1,0 +1,75 @@
+/* Calendars ************************/
+table.calendar {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed; }
+    table.calendar th {
+      text-align: center;
+      overflow: hidden;
+      padding: 2px;
+      width: 14.285714286%; }
+    table.calendar td {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 14.285714286%;
+      border: 1px solid $color-border;
+      border-top: none;
+      border-bottom: none;
+      padding: 0 2px 2px 2px;
+      line-height: 1;
+      overflow: hidden; }
+      table.calendar td.last {
+        border-bottom: 1px solid $color-border; }
+      table.calendar td .event a {
+        height: 1em;
+        overflow: hidden;
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        font-size: .8em;
+        padding: .5em;
+        line-height: 1;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px; }
+      table.calendar td .event a:hover {
+        background-color: #000; }
+      table.calendar td .event.c1 a {
+        background-color: $color-cal1; }
+        table.calendar td .event.c1 a:hover {
+          background: black; }
+      table.calendar td .event.c2 a {
+        background-color: $color-cal2; }
+        table.calendar td .event.c2 a:hover {
+          background: black; }
+      table.calendar td .event.c3 a {
+        background-color: $color-cal3; }
+        table.calendar td .event.c3 a:hover {
+          background: black; }
+      table.calendar td .event.c4 a {
+        background-color: $color-cal4; }
+        table.calendar td .event.c4 a:hover {
+          background: black; }
+      table.calendar td .event.c5 a {
+        background-color: $color-cal5; }
+        table.calendar td .event.c5 a:hover {
+          background: black; }
+      table.calendar td.last {
+        padding-bottom: 20px; }
+        table.calendar td.last .event {
+          margin-bottom: -18px; }
+    table.calendar tr.label td {
+      font-size: .8em;
+      border-bottom: none;
+      border-top: 1px solid $color-border;
+      padding-bottom: 0; }
+      table.calendar tr.label td.outside {
+        color: #aaa; }
+  
+  .event .date {
+    font-size: 160%;
+    padding: .3125em .625em;
+    color: #666; }

@@ -1,0 +1,43 @@
+/* Blogs ************************/
+.blog.post h2 a {
+    color: inherit; }
+  .blog.post .next {
+    float: right; }
+  .blog.post .published {
+    color: #666;
+    margin: 4px 0 0 2em;
+    font-size: 90%; }
+  
+  .blog.post {
+    margin-bottom: 2em;
+  }
+  
+  .blog.post + .blog.post {
+    border-top: 1px solid $color-border;
+  }
+  
+  #blog_nav {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    background: #666;
+    width: 100%; }
+    #blog_nav #newer_posts {
+      width: 25%;
+      z-index: 2;
+      position: absolute;
+      right: 0;
+      text-align: right; }
+    #blog_nav #older_posts {
+      width: 25%;
+      z-index: 2;
+      position: absolute;
+      left: 0; }
+    #blog_nav #blog_archive {
+      background: red;
+      text-align: center; }
+  
+  #content div.blog_archive {
+    margin-left: 20px; }
+  #content h3.blog_archive {
+    font-weight: normal; }
