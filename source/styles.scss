@@ -1,7 +1,7 @@
 // This variable will need to change to wherever you design theme's
 // images are stored. You should be able just change the number to
 // the number for your design theme.
-$image-location: '/stylesheets/design_images/340';
+$image-location: '/stylesheets/design_images/340' !default;
 
 $color-text-base: black;
 
@@ -160,9 +160,7 @@ body {
 
 #header {
   background-color: $background-header;
-  background-image: -webkit-linear-gradient($background-header-top, $background-header);
-  background-image: -moz-linear-gradient($background-header-top, $background-header);
-  background-image: -ms-linear-gradient($background-header-top, $background-header);
+  background-image: linear-gradient($background-header-top, $background-header);
   -webkit-border-top-left-radius: 10px;
   -moz-border-radius-topleft: 10px;
   border-top-left-radius: 10px;
@@ -185,10 +183,6 @@ body {
 
 #main {
   background-color: $background-sidebar;
-  background-image: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(0%, $background-sidebar), color-stop(33.2%, $background-sidebar), color-stop(33.2%, $background-content), color-stop(100%, $background-content));
-  background-image: -webkit-linear-gradient(right, $background-sidebar, $background-sidebar 33.2%, $background-content 33.2%, $background-content);
-  background-image: -moz-linear-gradient(right, $background-sidebar, $background-sidebar 33.2%, $background-content 33.2%, $background-content);
-  background-image: -o-linear-gradient(right, $background-sidebar, $background-sidebar 33.2%, $background-content 33.2%, $background-content);
   background-image: linear-gradient(right, $background-sidebar, $background-sidebar 33.2%, $background-content 33.2%, $background-content); }
   #main #main-menu {
     width: 33.2%;
@@ -224,9 +218,7 @@ body {
   clear: both;
   padding: 1em 1em 1px 1em;
   background-color: $background-footer;
-  background-image: -webkit-linear-gradient($background-footer-top, $background-footer);
-  background-image: -moz-linear-gradient($background-footer-top, $background-footer);
-  background-image: -ms-linear-gradient($background-footer-top, $background-footer);
+  background-image: linear-gradient($background-footer-top, $background-footer);
   -webkit-border-bottom-left-radius: 10px;
   -moz-border-radius-bottomleft: 10px;
   border-bottom-left-radius: 10px;
@@ -263,10 +255,6 @@ iframe {
     text-shadow: 0 1px 2px black; }
     .menu li.current span span {
       background-color: $background-menu-highlight;
-      background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, $background-menu-highlight), color-stop(100%, $background-menu-highlight-right));
-      background-image: -webkit-linear-gradient(left, $background-menu-highlight, $background-menu-highlight-right);
-      background-image: -moz-linear-gradient(left, $background-menu-highlight, $background-menu-highlight-right);
-      background-image: -o-linear-gradient(left, $background-menu-highlight, $background-menu-highlight-right);
       background-image: linear-gradient(left, $background-menu-highlight, $background-menu-highlight-right);
       color: $color-menu-highlight; }
   .menu a {
@@ -279,19 +267,11 @@ iframe {
       background: none; }
       .menu a:hover span {
         background-color: $background-menu-highlight;
-        background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, $background-menu-highlight), color-stop(100%, $background-menu-highlight-right));
-        background-image: -webkit-linear-gradient(left, $background-menu-highlight, $background-menu-highlight-right);
-        background-image: -moz-linear-gradient(left, $background-menu-highlight, $background-menu-highlight-right);
-        background-image: -o-linear-gradient(left, $background-menu-highlight, $background-menu-highlight-right);
         background-image: linear-gradient(left, $background-menu-highlight, $background-menu-highlight-right);
         color: $color-menu-highlight; }
     .menu a span {
       padding: .5em;
       background-color: $background-menu-item;
-      background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, $background-menu-item), color-stop(100%, $background-menu-item-right));
-      background-image: -webkit-linear-gradient(left, $background-menu-item, $background-menu-item-right);
-      background-image: -moz-linear-gradient(left, $background-menu-item, $background-menu-item-right);
-      background-image: -o-linear-gradient(left, $background-menu-item, $background-menu-item-right);
       background-image: linear-gradient(left, $background-menu-item, $background-menu-item-right);
       /*fix for ie7*/
       *width: 96%;
@@ -301,10 +281,6 @@ iframe {
     .menu span span {
       padding: .5em;
       background-color: $background-menu-item;
-      background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, $background-menu-item), color-stop(100%, $background-menu-item-right));
-      background-image: -webkit-linear-gradient(left, $background-menu-item, $background-menu-item-right);
-      background-image: -moz-linear-gradient(left, $background-menu-item, $background-menu-item-right);
-      background-image: -o-linear-gradient(left, $background-menu-item, $background-menu-item-right);
       background-image: linear-gradient(left, $background-menu-item, $background-menu-item-right);
       /*fix for ie7*/
       *width: 96%;
@@ -713,10 +689,6 @@ a.button {
   text-decoration: none;
   display: inline-block;
   line-height: 1;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, $color-button), color-stop(100%, $color-button-bottom));
-  background-image: -webkit-linear-gradient($color-button, $color-button-bottom);
-  background-image: -moz-linear-gradient($color-button, $color-button-bottom);
-  background-image: -o-linear-gradient($color-button, $color-button-bottom);
   background-image: linear-gradient($color-button, $color-button-bottom);
   border-top: 1px solid $color-button-bottom;
   border-bottom: 1px solid $color-button; }
