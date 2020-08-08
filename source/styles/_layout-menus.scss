@@ -1,0 +1,59 @@
+.menu {
+    margin-bottom: -0.25em; }
+    .menu li {
+      list-style-type: none;
+      margin: 0 0 .25em 0;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-weight: bold;
+      line-height: 1;
+      text-shadow: 0 1px 2px black; }
+      .menu li.current span span {
+        background-color: $background-menu-highlight;
+        background-image: linear-gradient(left, $background-menu-highlight, $background-menu-highlight-right);
+        color: $color-menu-highlight; }
+    .menu a {
+      display: block;
+      text-decoration: none;
+      color: $color-menu; }
+      .menu a:link, .menu a:visited {
+        color: $color-menu; }
+      .menu a:hover {
+        background: none; }
+        .menu a:hover span {
+          background-color: $background-menu-highlight;
+          background-image: linear-gradient(left, $background-menu-highlight, $background-menu-highlight-right);
+          color: $color-menu-highlight; }
+      .menu a span {
+        padding: .5em;
+        background-color: $background-menu-item;
+        background-image: linear-gradient(left, $background-menu-item, $background-menu-item-right);
+        /*fix for ie7*/
+        *width: 96%;
+        *padding: 2%; }
+    .menu span {
+      display: block; }
+      .menu span span {
+        padding: .5em;
+        background-color: $background-menu-item;
+        background-image: linear-gradient(left, $background-menu-item, $background-menu-item-right);
+        /*fix for ie7*/
+        *width: 96%;
+        *padding: 2%; }
+  
+  #content .menu li {
+    float: left;
+    padding: 0 .25em;
+    /*width: 20%;*/
+    line-height: 1;
+    font-size: 90%; }
+    #content .menu li span {
+      background-image: none; }
+
+
+@media screen and (max-width: 800px) {
+  .menu li a span, .menu li.current span span, .menu li a:hover span {
+    background-image: none; } }
+      
+      

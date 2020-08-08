@@ -1,0 +1,69 @@
+/* Typography - main ************************/
+html {
+    font-family: $font-main;
+    font-size: .8em;
+    line-height: 1.2;
+    color: $color-text-base; }
+    html table {
+      font-size: 1em; }
+  
+  p, ul, ol {
+    margin: 0 0 1em 0; }
+  
+  li {
+    list-style-type: disc;
+    margin-left: 1.25em; }
+  
+  ul ul {
+    margin-bottom: 0; }
+  
+  #footer {
+    font-size: .9em;
+    text-align: center;
+    color: $color-footer; }
+    #footer a, #footer a:hover, #footer a:visited, #footer a:link {
+      color: inherit;
+      background: inherit; }
+  
+  strong {
+    font-weight: bold;
+    font-style: inherit; }
+  
+  em {
+    font-style: italic;
+    font-weight: inherit; }
+  
+  a, a:link {
+    color: $color-link; }
+  
+  a:visited {
+    color: $color-text-base; }
+  
+  a:hover, #content a:hover {
+    color: white;
+    background: $color-link;
+    text-decoration: none; }
+  
+  pre {
+    margin-bottom: 1em;
+    padding: 1em;
+    background: #ccc; }
+  
+  #header #title h1.lyt {
+    color: $color-header-title;
+    font-size: 200%;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    text-shadow: 0 2px 3px black;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.75); }
+    #header #title h1.lyt a, #header #title h1.lyt a:link, #header #title h1.lyt a:hover {
+      font-size: 100%;
+      text-decoration: inherit;
+      color: inherit;
+      background: inherit;
+      line-height: 1;
+      padding: 0;
+      margin: 0; }
+  #header #title #tagline {
+    color: $color-header-tagline; }

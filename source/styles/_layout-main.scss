@@ -1,0 +1,226 @@
+html {
+    background-color: $background-html-base;
+    background-image: url("#{$image-location}/asphalt.jpg");
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, $background-html-top), color-stop(100%, $background-html)), url("#{$image-location}/asphalt.jpg");
+    background-image: -webkit-linear-gradient(top, $background-html-top, $background-html), url("#{$image-location}/asphalt.jpg");
+    background-image: -moz-linear-gradient(top, $background-html-top, $background-html), url("#{$image-location}/asphalt.jpg");
+    background-image: -o-linear-gradient(top, $background-html-top, $background-html), url("#{$image-location}/asphalt.jpg");
+    background-image: linear-gradient(top, $background-html-top, $background-html), url("#{$image-location}/asphalt.jpg");
+    background-attachment: fixed; }
+    html strong {
+      font-weight: 700; }
+  
+  body {
+    margin: 0 auto;
+    padding: 1em 4em;
+    /*background-color: #fff;*/
+    max-width: 1200px; }
+  
+  #container {
+    box-shadow: 0 3px 15px 2px rgba(0, 0, 0, 0.75);
+    margin-bottom: 1em;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-bottom-right-radius: 10px; }
+  
+  .lyt {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    position: relative; }
+  
+  #header {
+    background-color: $background-header;
+    background-image: linear-gradient($background-header-top, $background-header);
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-right-radius: 10px;
+    font-size: 18px; }
+    #header #title {
+      padding: 1em 20px;
+      width: 66.8%; }
+    #header #header-zone {
+      padding: 1em 20px;
+      width: 33.2%;
+      *width: 31.2%;
+      *padding: 1%;
+      color: black; }
+  
+  #main {
+    background-color: $background-sidebar;
+    background-image: linear-gradient(right, $background-sidebar, $background-sidebar 33.2%, $background-content 33.2%, $background-content); }
+    #main #main-menu {
+      width: 33.2%;
+      float: right;
+      padding: 20px 20px 0 20px;
+      /*fix fir ie7*/
+      *width: 31.2%;
+      *padding: 1%; }
+    #main #content {
+      width: 66.8%;
+      padding: 20px;
+      background-color: $background-content;
+      float: left;
+      *width: 62.6%;
+      *padding-left: 2%;
+      *padding-right: 2%; }
+      #main #content #content-main {
+        min-height: 300px; }
+    #main #sidebar {
+      float: right;
+      clear: right;
+      width: 33.2%;
+      padding: 20px;
+  
+      /*fix for ie7*/
+      *width: 31.2%;
+      *padding: 1%; }
+      #main #sidebar .zone {
+        margin-bottom: 1em; }
+  
+  #footer {
+    float: none;
+    clear: both;
+    padding: 1em 1em 1px 1em;
+    background-color: $background-footer;
+    background-image: linear-gradient($background-footer-top, $background-footer);
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-bottom-right-radius: 10px;
+    /*fix for ie7*/
+    *width: 98%;
+    *padding: 1em 1% 1px 1%; }
+  
+  img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto; }
+  
+  iframe {
+    background: white;
+    max-width: 100%;
+    overflow: hidden;
+    border: 1px solid black;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5); }
+
+
+
+    
+/* Layout - 800 pixels or less *************************/
+@media screen and (max-width: 800px) {
+  body {
+    margin: 0;
+    padding: 1em; }
+
+  #header #title {
+    padding: 1em;
+    width: 70%; }
+  #header #header-zone {
+    padding: 1em;
+    width: 30%; }
+
+  #main {
+    background-image: none; }
+    #main #main-menu {
+      margin: 0;
+      width: 100%; }
+    #main #content {
+      padding: 2em 1em;
+      margin: 0;
+      width: 100%; }
+      #main #content #content-main {
+        min-height: 0; }
+    #main #sidebar {
+      clear: left;
+      margin: 0;
+      width: 100%;
+      padding: .5em 0 0 0; }
+      #main #sidebar .col {
+        width: 100%;
+        padding: 0;
+        margin: 0; }
+      #main #sidebar .zone {
+        width: 50%;
+        padding: .5em 1em;
+        margin-bottom: 0; }
+
+  #main-menu {
+    padding: .75em !important; }
+    #main-menu li {
+      float: left;
+      width: 33.33333%;
+      margin: 0;
+      padding: .25em;
+      text-align: center;
+      line-height: 1; }
+
+  #footer {
+    padding: 1em .5em 1px .5em; } }
+
+
+
+/* Layout - 480 pixels or less *************************/
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0; }
+
+  #container,
+  #footer,
+  #header {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    box-shadow: none;
+    height: auto; }
+    #container #title,
+    #footer #title,
+    #header #title {
+      width: 100%;
+      padding-bottom: 0;
+      *width: 98%;
+      *padding: 1%; }
+    #container #header-zone,
+    #footer #header-zone,
+    #header #header-zone {
+      width: 100%;
+      padding: 0 1em 1em 1em;
+      *width: 98%;
+      *padding: 1%; }
+      #container #header-zone > *:first-child,
+      #footer #header-zone > *:first-child,
+      #header #header-zone > *:first-child {
+        margin-top: 1em; }
+
+  #main-menu li {
+    width: 33.333%; } }
+
+
+
+@media screen and (max-width: 320px) {
+  #main-menu li {
+    width: 50%; }
+
+  #main #sidebar .col {
+    margin: 0;
+    border: 0;
+    padding: 0; }
+  #main #sidebar .zone {
+    width: 100%;
+    padding: .5em; } }
