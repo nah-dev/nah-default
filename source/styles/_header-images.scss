@@ -1,0 +1,54 @@
+
+// Sample photo by Anandprakash Yadav from Pexels
+// https://www.pexels.com/photo/landscape-orange-sky-sky-sunset-771195/
+
+
+#header {
+    box-sizing: border-box;
+    height: 140px;
+    background-image: url("#{$image-location}/header-1200.png");
+    background-position: bottom left;
+    background-repeat: no-repeat
+}
+
+// The following two are an attempt to pre-load the two other header images
+// without actually displaying them.  This way if the screen size changes, 
+// (for example, they rotate their phone to landscape orientation)
+// there shouldn't be a delay to the user while their device loads the next image.
+#header:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("#{$image-location}/header-800.png");
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+#header:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("#{$image-location}/header-400.png");
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+// Had to change the color of the tagline to get it to show
+// up with the sample image behind it.
+#header #title #tagline {
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    #header {
+        height: 100px;
+        background-image: url("#{$image-location}/header-800.png");
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #header {
+        background-image: url("#{$image-location}/header-400.png");
+    }
+}
