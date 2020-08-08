@@ -1,0 +1,11 @@
+// This style file is only used for the sample pages in 
+// this project.  It imports the real stylesheet, but
+// overrides the image location folder so we don't have
+// to change the folder setup in the build folder.
+
+// This is the image location only for the sample pages
+// in this project. It will be overridden in the main
+// style sheet to whatever is set in ../styles.scss/
+$image-location: '/images' !default;
+
+@import "../styles.scss"
